@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navigation{
+        background-color: darkorchid;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 6px;
+        padding: 8px 14px;
+        text-align: right;
+        display: flex;
+        padding: 10px 40px;
+        justify-content: space-between;
+        
+        
+
+
+    }
+    .logo-box img{
+      
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin-top: 20px;
+
+    }
+    .images{
+      background-color: aqua;
+      margin: left;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    margin: auto;
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        padding-inline: 50px;  
+    }
+    div.links {
+        display: flex;
+        flex-wrap: wrap;
+        float: right;
+        gap: 25px;
+        text-decoration: none;
+    }
+    .links a{
+      flex-wrap: wrap;
+      display: flex;
+    
+     font-weight: bold;
+     color: white;
+     margin-top: 3px;
+     text-decoration: none;
+    
+     
+    }
+</style>
+<body>
+    <div class="navigation">
+      <div class="logo-box">
+        <img src="3bedroom b.jpg" alt="">
+      </div>
+      <div class="links">
+        <a href="home.html">Home</a>
+        <a href="about us.html">About us</a>
+        <a href="Contact US.html">Contact</a>
+        <a href="Help.html">Help</a>
+      </div>
+    </div>
+      
+        
+    
+    <!-- PAGE HEADER -->
+  <header>Welcome to Whizkid Rentals</header>
+  <p style="text-align:center; margin-top:20px;">You are successfully logged in.</p>
+  <!-- LOGOUT BUTTON -->
+  <button class="logout-btn" onclick="logout()">Logout</button>
+  <script>
+    // Redirect user if not logged in
+    if (localStorage.getItem('loggedIn') !== 'true') {
+      alert("Please log in first!");
+      window.location.href = "login.html";
+    }
+    function logout() {
+      localStorage.removeItem('loggedIn');
+      alert("You have logged out.");
+      window.location.href = "login.html";
+    }
+  </script>
+  <div class="images">
+        <div>
+            <a href="3bedroom.html">
+                <img src="pint images/3bedroom.jpg" alt="3Bedroom House">
+                <H1>3-BEDROOM</H1>
+                <P>3Bedroom with spacious rooms.</P>
+                <ul>
+                  <li>3Bedrooms and 2Bathrooms</li>
+                  <li>Kitchen and spacious sittingroom</li>
+                  <li>Secure and gated compound </li>
+                  <li>private parking and backyard</li>
+                  <li>Water, Electricity and Wi-Fi</li>
+                  <li>PRICE KSH 35,000/MONTH</li>
+                  <a href="contact.html">contact Agent</a>
+                </ul>
+                </a>
+              </div>
+      <div>
+      <a href="2bedroom.html">
+        <img src="pint images/2Bedroom.jpg..jpg"alt="">
+        <h2>2-BEDROOM</h2>
+                        <P>2Bedroom with spacious rooms.</P>
+                <ul>
+                  <li>2Bedrooms and 2Bathrooms</li>
+                  <li>Kitchen and spacious sittingroom</li>
+                  <li>Secure and gated compound </li>
+                  <li>private parking and backyard</li>
+                  <li>Water, Electricity and Wi-Fi</li>
+                  <li>PRICE KSH 25,000/MONTH</li>
+                  <a href="contact.html">contact Agent</a>
+                </ul>
+      </a>
+      </div>
+      <div>
+    <a href="1bedroom.html">
+      <img src="pint images/1bedroom.jpg"alt="">
+      <h3>1-BEDROOM</h3>
+                      <P>cozy 1bedroom unit perfect for singles or couples.</P>
+                <ul>
+                  <li>1Bedrooms and 1Bathrooms</li>
+                  <li>Kitchen and spacious sittingroom</li>
+                  <li>Secure and gated compound </li>
+                  <li>Ample parking and backyard</li>
+                  <li>Water, Electricity and Wi-Fi</li>
+                  <li>PRICE KSH 15,000/MONTH</li>
+                  <a href="contact.html">contact Agent</a>
+                </ul>
+    </a>
+  </div>
+  <div>
+    <a href="singleroom.html">
+      <img src="pint images/Singleroom.jpg"alt="">
+      <h4>SINGLE ROOM</h4>
+      <P>Affordable single room ideal for student.</P>
+                <ul>
+                  <li>1 room with shared bathroom</li>
+                  <li>Secure and gated compound </li>
+                  <li>Water, Electricity and Wi-Fi</li>
+                  <li>PRICE KSH 6,000/MONTH</li>
+                  <a href="contact.html">contact Agent</a>
+                </ul>
+    </a>
+  </div>
+  <div>
+    <a href="homestead.html">
+      <img src="pint images/Homestead.jpg"alt="">
+      <H1>HOMESTEAD</H1>
+                <P>Peaceful homestead on a large piece of land.</P>
+                <ul>
+                  <li>4Bedrooms and 3Bathrooms</li>
+                  <li>Garden, and farm area</li>
+                  <li>Secure, swimmingpool,gated compound </li>
+                  <li>private parking and backyard</li>
+                  <li>Borehole Water, solar power, Electricity</li>
+                  <li>PRICE KSH 70,000/MONTH</li>
+                  <a href="contact.html">contact Agent</a>
+                </ul>
+    </a>
+  </div>
+  <div>
+    <a href="mansion.html">
+      <img src="pint images/Mansion.jpg"alt="">
+      <H1>LUXURY Mansion</H1>
+                <P>A premium mansion with modern architecture.</P>
+                <ul>
+                  <li>5Bedrooms and 4Bathrooms</li>
+                  <li>Garden, and farm area</li>
+                  <li>Kitchen and spacious sittingroom</li>
+                  <li>Secure and gated compound </li>
+                  <li>private parking, swimmingpool and backyard</li>
+                  <li>Water, Electricity and Wi-Fi</li>
+                  <li>Garage for two cars</li>
+                  <li>PRICE KSH 150,000/MONTH</li>
+                  <a href="contact.html">contact Agent</a>
+                </ul>
+    </a>
+  </div>
+    </div>
+    <!-- <style>
+      .images{
+        background-color: aquamarine;
+      }
+      img{
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 30px;
+      }
+    </style> -->
+</body>
+</html>
